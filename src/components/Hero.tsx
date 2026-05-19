@@ -69,7 +69,7 @@ const Hero = () => {
             className="text-5xl md:text-6xl font-semibold tracking-tight text-white leading-[1.06]"
           >
             Ajiva Global
-            <span className="block text-primary-200">Freight Forwarding & Logistics — Dubai, UAE</span>
+            <span className="block text-primary-200">Best Freight Forwarding & Logistics Service in Dubai, UAE</span>
           </motion.h1>
 
           <motion.p

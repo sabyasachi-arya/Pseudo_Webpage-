@@ -14,7 +14,7 @@ const Hero = () => {
         alt: 'Air freight cargo operations',
       },
       {
-        src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2400&q=80',
+        src: 'public/company_image_1',
         alt: 'Global trade network',
       },
     ],

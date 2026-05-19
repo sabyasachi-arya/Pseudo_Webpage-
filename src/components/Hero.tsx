@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowRightIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
-import 'company_image_1.png' from 'public';
 
 const Hero = () => {
   const slides = useMemo(

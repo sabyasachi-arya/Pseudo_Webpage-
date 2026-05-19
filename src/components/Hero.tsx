@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowRightIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
+import public;
 
 const Hero = () => {
   const slides = useMemo(
@@ -14,7 +15,7 @@ const Hero = () => {
         alt: 'Air freight cargo operations',
       },
       {
-        src: 'https://github.com/sabyasachi-arya/Pseudo_Webpage-/public/company_image_1',
+        src: 'public/company_image_1',
         alt: 'Global trade network',
       },
     ],

@@ -14,7 +14,7 @@ const Navbar = () => {
               <span className="text-white font-bold text-xl">AG</span>
             </div>
             <div className="leading-tight">
-              <div className="font-bold text-xl text-white">AJIVA GLOBAL</div>
+              <div className="font-bold text-xl text-white">AJIVA GLOBAL CARGO TRADING LLC</div>
               <div className="hidden sm:block text-xs text-white/70">Freight Forwarding · Customs · GCC Road Freight</div>
             </div>
           </div>

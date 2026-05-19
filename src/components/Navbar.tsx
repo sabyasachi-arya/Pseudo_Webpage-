@@ -10,9 +10,12 @@ const Navbar = () => {
       <div className="container-custom">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">AG</span>
-            </div>
+            <img
+  src="/company_logo.svg"
+  alt="Ajiva Global Logo"
+  className="h-10 w-auto"
+/>
+
             <div className="leading-tight">
               <div className="font-bold text-xl text-white">AJIVA GLOBAL CARGO TRADING LLC</div>
               <div className="hidden sm:block text-xs text-white/70">Freight Forwarding · Customs · GCC Road Freight</div>

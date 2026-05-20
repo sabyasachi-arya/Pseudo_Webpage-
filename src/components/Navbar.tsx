@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <img
-  src="/company_logo.svg"
+  src="/company_logo_2.png"
   alt="Ajiva Global Logo"
   className="h-10 w-auto"
 />

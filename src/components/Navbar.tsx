@@ -13,7 +13,7 @@ const Navbar = () => {
             <img
   src="/company_logo_2.png"
   alt="Ajiva Global Logo"
-  className="h-10 w-auto"
+  className="h-20 w-auto"
 />
 
             <div className="leading-tight">

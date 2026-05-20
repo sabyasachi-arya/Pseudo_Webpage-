@@ -83,8 +83,7 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed"
           >
-            Air freight, sea freight, GCC trucking, door-to-door cargo and customs clearance.
-            Built for fast-moving trade lanes across China, India, Africa and the GCC.
+            Experience proven freight and logistics services designed for thrilling new possibilities. Transform your supply chain with our world-class solutions
           </motion.p>
 
           <motion.div

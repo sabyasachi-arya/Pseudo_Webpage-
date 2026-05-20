@@ -63,7 +63,7 @@ const Hero = () => {
             className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 text-white mx-auto"
           >
             <GlobeAltIcon className="w-5 h-5 mr-2" />
-            <span className="text-sm font-medium">Dubai, INDIA · Freight Forwarding & Logistics</span>
+            <span className="text-sm font-medium">Dubai, UAE · Freight Forwarding & Logistics</span>
           </motion.div>
 
           <motion.h1
@@ -73,7 +73,8 @@ const Hero = () => {
             className="text-5xl md:text-6xl font-semibold tracking-tight text-white leading-[1.06]"
           >
             Ajiva Global
-            <span className="block text-primary-200">Best Freight Forwarding & Logistics Service in Dubai, UAE</span>
+            <span className="block text-primary-200">Reliable Freight Services: Best Way Forward</span>
+            <span className="block text-primary-200">Dubai, UAE</span>
           </motion.h1>
 
           <motion.p

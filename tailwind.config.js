@@ -17,6 +17,8 @@ module.exports = {
           700: '#1d4ed8',
           800: '#1e40af',
           900: '#1e3a8a',
+          peach: '#FFCDAB',
+          emerald: '#50C878',
         },
         secondary: {
           50: '#f8fafc',

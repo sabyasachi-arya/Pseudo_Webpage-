@@ -31,11 +31,13 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-emerald rounded-lg flex items-center justify-center">
-                <span className="text-peach font-bold text-xl">AG</span>
-              </div>
-              <span className="font-bold text-xl text-emerald">AJIVA GLOBAL</span>
-            </div>
+  <img
+    src="/company_logo_2.png"
+    alt="Ajiva Global Logo"
+    className="h-20 w-20"
+  />
+  <span className="font-bold text-xl text-emerald">AJIVA GLOBAL</span>
+</div>
             <p className="text-emerald/80 mb-6 leading-relaxed">
               Connecting continents, simplifying commerce. Your premier freight forwarding partner 
               based in Dubai, serving the world.

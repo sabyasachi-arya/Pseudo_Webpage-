@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full z-50 bg-secondary-900 py-4">
+    <nav className="w-full z-50 bg-peach py-4">
       <div className="container-custom">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-2">
@@ -17,7 +17,7 @@ const Navbar = () => {
 />
 
             <div className="leading-tight">
-              <div className="font-bold text-xl text-white">AJIVA GLOBAL</div>
+              <div className="font-bold text-xl text-emerald">AJIVA GLOBAL</div>
               <div className="hidden sm:block text-xs text-white/70">Freight Forwarding · Customs · GCC Road Freight</div>
             </div>
           </div>

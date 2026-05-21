@@ -31,7 +31,7 @@ module.exports = {
           900: '#0f172a',
         },
         peach: '#FFCDAB',
-        emerald: '#50C878',
+        emerald: '#00674F',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

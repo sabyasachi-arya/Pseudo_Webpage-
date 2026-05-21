@@ -34,7 +34,7 @@ const GCCNetwork = () => {
     {
       name: "Kuwait",
       flag: "KW",
-      image: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=420&q=60",
+      image: "/kuwait.jpg",
       cities: ["Kuwait City"],
       description: "Dependable long-haul trucking for commercial and industrial cargo.",
       features: ["Commercial freight", "Industrial cargo", "Secure handling"]

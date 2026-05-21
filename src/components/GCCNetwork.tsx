@@ -7,31 +7,39 @@ const GCCNetwork = () => {
     'https://images.unsplash.com/photo-1559291001-693fb9166cba?auto=format&fit=crop&w=1200&q=80';
 
   const countries = [
-  {
-    name: "Saudi Arabia",
-    flag: "SA",
-    image: "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?auto=format&fit=crop&w=420&q=60",
-    // ...
-  },
-  {
-    name: "Qatar",
-    flag: "QA",
-    image: "https://images.unsplash.com/photo-1611348524140-53c9a25263d6?auto=format&fit=crop&w=420&q=60",
-    // ...
-  },
-  {
-    name: "Oman",
-    flag: "OM",
-    image: "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=420&q=60",
-    // ...
-  },
-  {
-    name: "Kuwait",
-    flag: "KW",
-    image: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=420&q=60",
-    // ...
-  }
-];
+    {
+      name: "Saudi Arabia",
+      flag: "SA",
+      image: "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?auto=format&fit=crop&w=420&q=60",
+      cities: ["Riyadh", "Jeddah", "Dammam"],
+      description: "Regular transit to major commercial and industrial centers.",
+      features: ["Scheduled departures", "Cross-border coordination", "Commercial hubs"]
+    },
+    {
+      name: "Qatar",
+      flag: "QA",
+      image: "https://images.unsplash.com/photo-1611348524140-53c9a25263d6?auto=format&fit=crop&w=420&q=60",
+      cities: ["Doha"],
+      description: "Door pickup and final delivery with milestone visibility.",
+      features: ["Door-to-door", "Reliable schedule", "Tracking updates"]
+    },
+    {
+      name: "Oman",
+      flag: "OM",
+      image: "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=420&q=60",
+      cities: ["Muscat", "Sohar", "Salalah"],
+      description: "High-frequency coverage to key ports and commercial zones.",
+      features: ["Multiple destinations", "Regular service", "Flexible planning"]
+    },
+    {
+      name: "Kuwait",
+      flag: "KW",
+      image: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=420&q=60",
+      cities: ["Kuwait City"],
+      description: "Dependable long-haul trucking for commercial and industrial cargo.",
+      features: ["Commercial freight", "Industrial cargo", "Secure handling"]
+    }
+  ];
   return (
     <section id="gcc" className="py-20 bg-gray-50">
       <div className="container-custom">

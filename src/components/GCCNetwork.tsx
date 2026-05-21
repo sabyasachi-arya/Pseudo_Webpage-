@@ -26,7 +26,7 @@ const GCCNetwork = () => {
     {
       name: "Oman",
       flag: "OM",
-      image: "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=420&q=60",
+      image: "/oman.jpg",
       cities: ["Muscat", "Sohar", "Salalah"],
       description: "High-frequency coverage to key ports and commercial zones.",
       features: ["Multiple destinations", "Regular service", "Flexible planning"]

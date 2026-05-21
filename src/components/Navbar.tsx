@@ -17,7 +17,7 @@ const Navbar = () => {
 />
 
             <div className="leading-tight">
-              <div className="font-bold text-xl text-emerald">AJIVA GLOBAL</div>
+              <div className="font-bold text-xl text-emerald">AJIVA GLOBAL CARGO TRADING LLC</div>
               <div className="hidden sm:block text-xs text-white/70">Freight Forwarding · Customs · GCC Road Freight</div>
             </div>
           </div>

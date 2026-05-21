@@ -23,7 +23,7 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a ">Home</a>
+            <a href="#home" className="font-medium text-emerald/85 hover:text-emerald transition-colors">Home</a>
             <a href="#services" className="font-medium text-emerald/85 hover:text-emerald transition-colors">Services</a>
             <a href="#advantage" className="font-medium text-emerald/85 hover:text-emerald transition-colors">Strategic Advantage</a>
             <a href="#gcc" className="font-medium text-emerald/85 hover:text-emerald transition-colors">GCC Network</a>

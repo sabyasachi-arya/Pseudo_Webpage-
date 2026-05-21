@@ -33,9 +33,9 @@ const Navbar = () => {
               <Link
                 to="/login"
                 aria-label="Login"
-                className="inline-flex items-center justify-center w-11 h-11 rounded-lg border border-white/15 bg-white/5 hover:bg-white/10 transition-colors"
+                className="inline-flex items-center justify-center w-11 h-11 rounded-lg border border-emerald/40 bg-emerald/10 hover:bg-emerald/20 transition-colors"
               >
-                <UserCircleIcon className="w-6 h-6 text-white" />
+                <UserCircleIcon className="w-6 h-6 text-emerald" />
               </Link>
             </div>
           </div>

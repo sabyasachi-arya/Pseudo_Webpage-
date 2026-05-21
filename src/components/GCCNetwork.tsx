@@ -79,22 +79,35 @@ const GCCNetwork = () => {
           </p>
         </motion.div>
 
-        <div className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] overflow-hidden">
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-24 bg-gradient-to-r from-gray-50 to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-24 bg-gradient-to-l from-gray-50 to-transparent" />
+        {/* ✅ FIX 1: overflow-hidden instead of w-screen negative margin trick */}
+        <div className="relative overflow-hidden -mx-4 sm:-mx-6 lg:-mx-8">
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-24 bg-gradient-to-r from-gray-50 to-transparent z-10" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-24 bg-gradient-to-l from-gray-50 to-transparent z-10" />
 
-          <div className="flex w-max gap-6 sm:gap-8 motion-safe:animate-marquee px-4 sm:px-10">
+          {/* ✅ FIX 2: will-change + translate3d forces GPU compositing so animation never touches main thread */}
+          <div
+            className="flex gap-6 sm:gap-8 px-4 sm:px-10 motion-safe:animate-marquee"
+            style={{
+              width: 'max-content',
+              willChange: 'transform',
+              transform: 'translate3d(0, 0, 0)',
+            }}
+          >
             {[...countries, ...countries].map((country, index) => (
               <div
                 key={`${country.name}-${index}`}
-                className="w-[280px] sm:w-[340px] lg:w-[420px] bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden"
+                className="w-[280px] sm:w-[340px] lg:w-[420px] bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden flex-shrink-0"
               >
-                <div className="h-44 sm:h-52 overflow-hidden">
+                {/* ✅ FIX 3: explicit width + height prevents layout recalculation as images load */}
+                <div className="h-44 sm:h-52 overflow-hidden bg-gray-100">
                   <img
                     src={country.image}
                     alt={country.name}
+                    width={420}
+                    height={208}
                     className="w-full h-full object-cover"
                     loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       e.currentTarget.src = imageFallback;
                     }}

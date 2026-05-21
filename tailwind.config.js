@@ -32,6 +32,7 @@ module.exports = {
         },
         peach: '#FFCDAB',
         emerald: '#00674F',
+        lime: '#92DC00',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

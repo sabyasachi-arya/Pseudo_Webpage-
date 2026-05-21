@@ -72,7 +72,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href}
-                    className=className="text-emerald/80 hover:text-emerald transition-colors duration-200"
+                    className="text-emerald/80 hover:text-emerald transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -91,7 +91,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
-                  <span className="text-gray-300">{service}</span>
+                  <span className="text-emerald/80">{service}</span>
                 </li>
               ))}
             </ul>
@@ -103,7 +103,7 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h3 className="text-xl font-bold mb-6 text-emerald">Our Services</h3>
+            <h3 className="text-xl font-bold mb-6 text-emerald">Business Hours</h3>
             <div className="space-y-2 text-emerald/80">
               <div className="flex justify-between">
                 <span>Monday - Friday</span>

@@ -8,6 +8,8 @@ import {
   MapPinIcon
 } from '@heroicons/react/24/outline';
 
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbxFnZiBpyXPEYLZ51D_BJe9LNBkOYB1tRxYlxZ5anpjm1CauTx9Js5adeQRlWhE8BVj-w/exec";
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -17,6 +19,8 @@ const Contact = () => {
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -25,16 +29,36 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      service: '',
-      message: ''
-    });
+    setLoading(true);
+    setError(false);
+
+    try {
+      await fetch(SHEET_URL, {
+        method: 'POST',
+        body: JSON.stringify({
+          name:    formData.name,
+          email:   formData.email,
+          phone:   formData.phone,
+          service: formData.service,
+          message: formData.message,
+        }),
+      });
+
+      setSubmitted(true);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        service: '',
+        message: ''
+      });
+    } catch (err) {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const contactInfo = [
@@ -92,7 +116,7 @@ const Contact = () => {
             <div className="bg-secondary-900 rounded-2xl p-8 text-white mb-8 border border-gray-800">
               <h3 className="text-2xl font-semibold mb-4">Ajiva Global — Dubai HQ</h3>
               <p className="text-gray-200 mb-8 leading-relaxed">
-                Fast response for air, sea and GCC road freight. Share your cargo details and preferred timelines — we’ll come back with the best routing and pricing.
+                Fast response for air, sea and GCC road freight. Share your cargo details and preferred timelines — we'll come back with the best routing and pricing.
               </p>
               
               <div className="space-y-4">
@@ -135,12 +159,18 @@ const Contact = () => {
             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm">
               <h3 className="text-2xl font-semibold text-secondary-900 mb-2">Request a Quote</h3>
               <p className="text-secondary-600 mb-6">
-                Tell us what you’re shipping and where it needs to go. We’ll respond with the best available option.
+                Tell us what you're shipping and where it needs to go. We'll respond with the best available option.
               </p>
 
               {submitted && (
                 <div className="mb-6 rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-800">
-                  Thanks — your request has been recorded. We’ll contact you shortly.
+                  Thanks — your request has been recorded. We'll contact you shortly.
+                </div>
+              )}
+
+              {error && (
+                <div className="mb-6 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">
+                  Something went wrong. Please try again or email us directly.
                 </div>
               )}
               
@@ -231,9 +261,10 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full btn-primary text-center"
+                  disabled={loading}
+                  className="w-full btn-primary text-center disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Send Message
+                  {loading ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             </div>

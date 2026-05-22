@@ -36,7 +36,7 @@ const Footer = () => {
     alt="Ajiva Global Logo"
     className="h-20 w-20"
   />
-  <span className="font-bold text-xl text-emerald">AJIVA GLOBAL</span>
+  <div className="font-bold text-xl text-emerald" style={{ fontFamily: "'Cinzel', serif" }}>AJIVA GLOBAL CARGO TRADING LLC</div>
 </div>
             <p className="text-emerald/80 mb-6 leading-relaxed">
               Connecting continents, simplifying commerce. Your premier freight forwarding partner 

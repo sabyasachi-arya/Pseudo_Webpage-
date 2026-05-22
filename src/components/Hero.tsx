@@ -49,9 +49,9 @@ const Hero = () => {
             transition={{ duration: 1.0, ease: 'easeInOut' }}
           />
         </AnimatePresence>
-
-        <div className="absolute inset-0 bg-gradient-to-b from-secondary-900/90 via-secondary-900/70 to-secondary-900/90" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.25),transparent_55%)]" />
+        
+<div className="absolute inset-0 bg-gradient-to-b from-peach/90 via-peach/70 to-peach/90" />
+<div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(146,220,0,0.25),transparent_55%)]" />
       </div>
 
       <div className="relative container-custom pt-16 md:pt-20 pb-14">

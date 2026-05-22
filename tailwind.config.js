@@ -32,7 +32,7 @@ module.exports = {
         },
         peach: '#FFFDD0',
         emerald: '#3F0D0C',
-        lime: '##E1A140',
+        lime: '#E1A140',
         orange: '#F37324',
       
       },

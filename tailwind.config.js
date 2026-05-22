@@ -30,7 +30,7 @@ module.exports = {
           800: '#1e293b',
           900: '#0f172a',
         },
-        peach: '#FFCDAB',
+        peach: '#FFFDD0',
         emerald: '#00ab41',
         lime: '#92DC00',
         orange: '#F37324',

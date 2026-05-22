@@ -50,7 +50,7 @@ const Hero = () => {
           />
         </AnimatePresence>
         
-<div className="absolute inset-0 bg-gradient-to-b from-peach/90 via-peach/70 to-peach/90" />
+<div className="absolute inset-0 bg-gradient-to-b from-orange/90 via-orange/70 to-orange/90" />
 <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(146,220,0,0.25),transparent_55%)]" />
       </div>
 

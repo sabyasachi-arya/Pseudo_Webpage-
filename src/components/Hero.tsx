@@ -92,7 +92,7 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="mt-8 flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <a href="#contact" className="btn-primary bg-primary-600 hover:bg-primary-700 inline-flex items-center justify-center">
+            <a href="#contact" className="btn-primary inline-flex items-center justify-center">
               Request a Quote
               <ArrowRightIcon className="w-5 h-5 ml-2" />
             </a>

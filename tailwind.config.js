@@ -1,4 +1,3 @@
-this is my tailwind.config:
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -35,6 +34,7 @@ module.exports = {
         emerald: '#00ab41',
         lime: '#92DC00',
         orange: '#F37324',
+      
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
@@ -59,4 +59,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+}      

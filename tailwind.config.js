@@ -32,8 +32,8 @@ module.exports = {
         },
         peach: '#FFFDD0',
         emerald: '#3F0D0C',
-        lime: '#92DC00',
-        orange: '#E1A140',
+        lime: '##E1A140',
+        orange: '#F37324',
       
       },
       animation: {

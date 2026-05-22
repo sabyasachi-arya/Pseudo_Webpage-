@@ -1,3 +1,4 @@
+this is my tailwind.config:
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,9 +6,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
-      },
       colors: {
         primary: {
           50: '#eff6ff',

@@ -18,7 +18,7 @@ const Navbar = () => {
 
             <div className="leading-tight">
               <div className="font-bold text-xl text-emerald" style={{ fontFamily: "'Cinzel', serif" }}>AJIVA GLOBAL CARGO TRADING LLC</div>
-              <div className="hidden sm:block text-xs text-emerald/70">Freight Forwarding · Customs · GCC Road Freight</div>
+              <div className="hidden sm:block text-xs text-white/70">Freight Forwarding · Customs · GCC Road Freight</div>
             </div>
           </div>
 

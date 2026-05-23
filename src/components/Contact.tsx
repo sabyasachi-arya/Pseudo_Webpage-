@@ -15,6 +15,7 @@ const FACEBOOK_URL  = "https://www.facebook.com/profile.php?id=61590182633624";
 const YOUTUBE_URL   = "https://www.youtube.com/@YOUR_CHANNEL";
 const LINKEDIN_URL  = "https://www.linkedin.com/in/ajiva-global-26652a40a/";
 const GMAPS_URL     = "https://maps.google.com/?q=YOUR_LOCATION";
+const WHATSAPP_NUMBER = "971544034567";
 
 function InstagramIcon() {
   return (
@@ -62,6 +63,15 @@ function GoogleMapsIcon() {
   );
 }
 
+function WhatsAppIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.523 5.847L.057 23.571a.75.75 0 0 0 .92.92l5.724-1.466A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.725 9.725 0 0 1-4.964-1.355l-.356-.212-3.694.947.964-3.595-.232-.371A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z" />
+    </svg>
+  );
+}
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -73,6 +83,7 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const [waHovered, setWaHovered] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -108,6 +119,27 @@ const Contact = () => {
     { icon: EnvelopeIcon,       title: "Email",           details: "Info@ajivacargotrading.com" },
     { icon: ClockIcon,          title: "Business Hours",  details: "Monday - Friday: 9:00 AM - 6:00 PM\nSaturday: 9:00 AM - 2:00 PM\nSunday: Closed" },
   ];
+
+  const waStyle: React.CSSProperties = {
+    position: 'fixed',
+    bottom: '28px',
+    right: '28px',
+    zIndex: 9999,
+    backgroundColor: '#25D366',
+    borderRadius: '50%',
+    width: '60px',
+    height: '60px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    boxShadow: waHovered
+      ? '0 6px 28px rgba(37,211,102,0.75)'
+      : '0 4px 20px rgba(37,211,102,0.5)',
+    transform: waHovered ? 'scale(1.12)' : 'scale(1)',
+    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+    cursor: 'pointer',
+    textDecoration: 'none',
+  };
 
   return (
     <section id="contact" className="py-20 bg-white">
@@ -167,7 +199,7 @@ const Contact = () => {
             <div className="bg-secondary-900 rounded-2xl p-8 text-white mb-8 border border-gray-800">
               <h3 className="text-2xl font-semibold mb-4">Ajiva Global — Dubai HQ</h3>
               <p className="text-gray-200 mb-8 leading-relaxed">
-                Fast response for air, sea and GCC road freight. Share your cargo details and preferred timelines — we'll come back with the best routing and pricing.
+                Fast response for air, sea and GCC road freight. Share your cargo details and preferred timelines — we will come back with the best routing and pricing.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">
@@ -271,6 +303,19 @@ const Contact = () => {
         </div>
 
       </div>
+
+      
+        href={"https://wa.me/" + WHATSAPP_NUMBER + "?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20freight%20services."}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+        style={waStyle}
+        onMouseEnter={function() { setWaHovered(true); }}
+        onMouseLeave={function() { setWaHovered(false); }}
+      >
+        <WhatsAppIcon />
+      </a>
+
     </section>
   );
 };

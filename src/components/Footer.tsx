@@ -74,7 +74,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href}
-                    className="text-emerald/80 hover:text-white transition-colors duration-200"
+                    className="text-white/80 hover:text-white transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -106,7 +106,7 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <h3 className="text-xl font-bold mb-6 text-white">Business Hours</h3>
-            <div className="space-y-2 text-emerald/80">
+            <div className="space-y-2 text-white/80">
               <div className="flex justify-between">
                 <span>Monday - Friday</span>
                 <span>9:00 AM - 6:00 PM</span>

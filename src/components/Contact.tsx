@@ -15,7 +15,45 @@ const FACEBOOK_URL  = "https://www.facebook.com/profile.php?id=61590182633624";
 const YOUTUBE_URL   = "https://www.youtube.com/@YOUR_CHANNEL";
 const LINKEDIN_URL  = "https://www.linkedin.com/in/ajiva-global-26652a40a/";
 const GMAPS_URL     = "https://maps.google.com/?q=YOUR_LOCATION";
-const WHATSAPP_NUMBER = "971541723717";
+const WHATSAPP_NUMBER = "971544034567";
+
+const WA_BASE: React.CSSProperties = {
+  position: 'fixed',
+  bottom: '28px',
+  right: '28px',
+  zIndex: 9999,
+  backgroundColor: '#25D366',
+  borderRadius: '50%',
+  width: '60px',
+  height: '60px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  cursor: 'pointer',
+  textDecoration: 'none',
+  transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+  boxShadow: '0 4px 20px rgba(37,211,102,0.5)',
+  transform: 'scale(1)',
+};
+
+const WA_HOVERED: React.CSSProperties = {
+  position: 'fixed',
+  bottom: '28px',
+  right: '28px',
+  zIndex: 9999,
+  backgroundColor: '#25D366',
+  borderRadius: '50%',
+  width: '60px',
+  height: '60px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  cursor: 'pointer',
+  textDecoration: 'none',
+  transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+  boxShadow: '0 6px 28px rgba(37,211,102,0.75)',
+  transform: 'scale(1.12)',
+};
 
 function InstagramIcon() {
   return (
@@ -119,27 +157,6 @@ const Contact = () => {
     { icon: EnvelopeIcon,       title: "Email",           details: "Info@ajivacargotrading.com" },
     { icon: ClockIcon,          title: "Business Hours",  details: "Monday - Friday: 9:00 AM - 6:00 PM\nSaturday: 9:00 AM - 2:00 PM\nSunday: Closed" },
   ];
-
-  const waStyle: React.CSSProperties = {
-    position: 'fixed',
-    bottom: '28px',
-    right: '28px',
-    zIndex: 9999,
-    backgroundColor: '#25D366',
-    borderRadius: '50%',
-    width: '60px',
-    height: '60px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    boxShadow: waHovered
-      ? '0 6px 28px rgba(37,211,102,0.75)'
-      : '0 4px 20px rgba(37,211,102,0.5)',
-    transform: waHovered ? 'scale(1.12)' : 'scale(1)',
-    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-    cursor: 'pointer',
-    textDecoration: 'none',
-  };
 
   return (
     <section id="contact" className="py-20 bg-white">
@@ -309,7 +326,7 @@ const Contact = () => {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
-        style={waStyle}
+        style={waHovered ? WA_HOVERED : WA_BASE}
         onMouseEnter={function() { setWaHovered(true); }}
         onMouseLeave={function() { setWaHovered(false); }}
       >

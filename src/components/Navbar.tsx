@@ -85,10 +85,10 @@ const Navbar = () => {
       <div className="bg-white border-b border-gray-100 shadow-sm">
         <div className="container-custom">
           <div className="flex justify-between items-center py-3">
-            <div className="flex items-center space-x-3">
-              <img src="/company_logo_2.png" alt="Ajiva Global Logo" className="h-14 w-14 object-contain" style={{ transform: 'scale(1.5)', transformOrigin: 'left center' }} />
+            <div className="flex items-center space-x-3 min-w-0">
+              <img src="/company_logo_2.png" alt="Ajiva Global Logo" className="h-16 w-16 object-contain flex-shrink-0" />
               <div className="leading-tight">
-                <div className="font-bold text-secondary-900" style={{ fontFamily: "'Cinzel', serif", fontSize: '1.1rem', lineHeight: '1.2', transform: 'scale(1.5)', transformOrigin: 'left center', display: 'inline-block' }}>AJIVA GLOBAL CARGO TRADING LLC</div>
+                <div className="font-bold text-secondary-900 text-sm sm:text-base md:text-lg leading-tight" style={{ fontFamily: "'Cinzel', serif" }}>AJIVA GLOBAL CARGO TRADING LLC</div>
                 <div className="hidden sm:block text-xs text-secondary-500">Freight Forwarding · Customs · GCC Road Freight</div>
               </div>
             </div>

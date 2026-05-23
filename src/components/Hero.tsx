@@ -76,7 +76,7 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-5xl md:text-6xl font-semibold tracking-tight text-white leading-[1.06]"
           >
-            Ajiva Global
+            AJIVA GLOBAL
             <span className="block text-primary-200">Reliable Freight Services: Best Way Forward</span>
             <span className="block text-primary-200">Dubai, UAE</span>
           </motion.h1>

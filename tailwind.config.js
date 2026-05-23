@@ -34,6 +34,7 @@ module.exports = {
         emerald: '#3F0D0C',
         lime: '#E1A140',
         orange: '#F37324',
+        orange_1: '#F37324',
       
       },
       animation: {

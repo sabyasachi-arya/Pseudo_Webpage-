@@ -15,7 +15,7 @@ const FACEBOOK_URL  = "https://www.facebook.com/profile.php?id=61590182633624";
 const YOUTUBE_URL   = "https://www.youtube.com/@YOUR_CHANNEL";
 const LINKEDIN_URL  = "https://www.linkedin.com/in/ajiva-global-26652a40a/";
 const GMAPS_URL     = "https://maps.google.com/?q=YOUR_LOCATION";
-const WHATSAPP_NUMBER = "971544034567";
+const WHATSAPP_NUMBER = "971541723717";
 
 function InstagramIcon() {
   return (

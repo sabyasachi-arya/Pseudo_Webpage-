@@ -17,17 +17,17 @@ const Navbar = () => {
 />
 
             <div className="leading-tight">
-              <div className="font-bold text-xl text-emerald" style={{ fontFamily: "'Cinzel', serif" }}>AJIVA GLOBAL CARGO TRADING LLC</div>
+              <div className="font-bold text-xl text-orange" style={{ fontFamily: "'Cinzel', serif" }}>AJIVA GLOBAL CARGO TRADING LLC</div>
               <div className="hidden sm:block text-xs text-white/70">Freight Forwarding · Customs · GCC Road Freight</div>
             </div>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="font-medium text-emerald/85 hover:text-emerald transition-colors">Home</a>
-            <a href="#services" className="font-medium text-emerald/85 hover:text-emerald transition-colors">Services</a>
-            <a href="#advantage" className="font-medium text-emerald/85 hover:text-emerald transition-colors">Strategic Advantage</a>
-            <a href="#gcc" className="font-medium text-emerald/85 hover:text-emerald transition-colors">GCC Network</a>
-            <a href="#contact" className="font-medium text-emerald/85 hover:text-emerald transition-colors">Contact</a>
+            <a href="#home" className="font-medium text-white/85 hover:text-white transition-colors">Home</a>
+            <a href="#services" className="font-medium text-white/85 hover:text-white transition-colors">Services</a>
+            <a href="#advantage" className="font-medium text-white/85 hover:text-white transition-colors">Strategic Advantage</a>
+            <a href="#gcc" className="font-medium text-white/85 hover:text-white transition-colors">GCC Network</a>
+            <a href="#contact" className="font-medium text-white/85 hover:text-white transition-colors">Contact</a>
             <div className="flex items-center gap-3">
               <a href="#contact" className="btn-primary">Get Quote</a>
               <Link

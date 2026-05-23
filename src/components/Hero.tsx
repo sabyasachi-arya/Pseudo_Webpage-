@@ -21,6 +21,10 @@ const Hero = () => {
         src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2400&q=80',
         alt: 'Global trade network',
       },
+      {
+        src: 'company_image_2.png?auto=format&fit=crop&w=2400&q=80',
+        alt: 'Custom Image 2',
+      },
     ],
     [],
   );

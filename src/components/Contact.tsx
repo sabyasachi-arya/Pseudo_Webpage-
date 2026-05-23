@@ -10,10 +10,10 @@ import {
 
 const SHEET_URL = "https://script.google.com/macros/s/AKfycbxPrYZB6ipV2LiC0iZqldw6usF6S9OrYMcBGEITqerKNyr4-u7ycGo95oLIE3hLwxL-Dw/exec";
 
-const INSTAGRAM_URL = "https://www.instagram.com/YOUR_HANDLE";
-const FACEBOOK_URL  = "https://www.facebook.com/YOUR_PAGE";
+const INSTAGRAM_URL = "https://www.instagram.com/ajiva_global_cargo/";
+const FACEBOOK_URL  = "https://www.facebook.com/profile.php?id=61590182633624";
 const YOUTUBE_URL   = "https://www.youtube.com/@YOUR_CHANNEL";
-const LINKEDIN_URL  = "https://www.linkedin.com/company/YOUR_COMPANY";
+const LINKEDIN_URL  = "https://www.linkedin.com/in/sabyasachi-bhattacharjee-62b27032a/";
 const GMAPS_URL     = "https://maps.google.com/?q=YOUR_LOCATION";
 
 function InstagramIcon() {

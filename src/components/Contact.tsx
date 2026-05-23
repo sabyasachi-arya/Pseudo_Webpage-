@@ -213,10 +213,10 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="bg-secondary-900 rounded-2xl p-8 text-white mb-8 border border-gray-800">
-              <h3 className="text-2xl font-semibold mb-4">Ajiva Global — Dubai HQ</h3>
+            <div className="bg-darkteal rounded-2xl p-8 text-white mb-8 border border-gray-800">
+              <h3 className="text-2xl font-semibold mb-4">Ajiva Global - Dubai HQ</h3>
               <p className="text-gray-200 mb-8 leading-relaxed">
-                Fast response for air, sea and GCC road freight. Share your cargo details and preferred timelines — we will come back with the best routing and pricing.
+                Fast response for air, sea and GCC road freight. Share your cargo details and preferred timelines, we will come back with the best routing and pricing.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">

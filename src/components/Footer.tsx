@@ -21,7 +21,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-peach text-emerald">
+    <footer className="bg-darkteal text-white">
       <div className="container-custom py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <motion.div
@@ -36,23 +36,23 @@ const Footer = () => {
     alt="Ajiva Global Logo"
     className="h-20 w-20"
   />
-  <div className="font-bold text-xl text-emerald" style={{ fontFamily: "'Cinzel', serif" }}>AJIVA GLOBAL CARGO TRADING LLC</div>
+  <div className="font-bold text-xl text-white" style={{ fontFamily: "'Cinzel', serif" }}>AJIVA GLOBAL CARGO TRADING LLC</div>
 </div>
-            <p className="text-emerald/80 mb-6 leading-relaxed">
+            <p className="text-white/80 mb-6 leading-relaxed">
               Connecting continents, simplifying commerce. Your premier freight forwarding partner 
               based in Dubai, serving the world.
             </p>
             <div className="space-y-3">
-              <div className="flex items-center text-emerald/80">
+              <div className="flex items-center text-white/80">
                 <PhoneIcon className="w-5 h-5 mr-3 text-emerald" />
                 <span>+971 54 403 4567</span>
               </div>
-              <div className="flex items-center text-emerald/80">
+              <div className="flex items-center text-white/80">
                 <EnvelopeIcon className="w-5 h-5 mr-3 text-emerald" />
                 <span>Info@ajivacargotrading.com</span>
               </div>
-              <div className="flex items-start text-emerald/80">
-                <MapPinIcon className="w-5 h-5 mr-3 text-emerald mt-1" />
+              <div className="flex items-start text-white/80">
+                <MapPinIcon className="w-5 h-5 mr-3 text-white mt-1" />
                 <span className="text-sm">
                   Office - 213 #05 Sadaf Business Centre,<br />
                   Al Qiyadah exit -2, Al kazim Building,<br />
@@ -68,13 +68,13 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h3 className="text-xl font-bold mb-6 text-emerald">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-6 text-white">Quick Links</h3>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <a 
                     href={link.href}
-                    className="text-emerald/80 hover:text-emerald transition-colors duration-200"
+                    className="text-emerald/80 hover:text-white transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -89,11 +89,11 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-xl font-bold mb-6 text-emerald">Our Services</h3>
+            <h3 className="text-xl font-bold mb-6 text-white">Our Services</h3>
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
-                  <span className="text-emerald/80">{service}</span>
+                  <span className="text-white/80">{service}</span>
                 </li>
               ))}
             </ul>
@@ -105,7 +105,7 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h3 className="text-xl font-bold mb-6 text-emerald">Business Hours</h3>
+            <h3 className="text-xl font-bold mb-6 text-white">Business Hours</h3>
             <div className="space-y-2 text-emerald/80">
               <div className="flex justify-between">
                 <span>Monday - Friday</span>
@@ -127,14 +127,14 @@ const Footer = () => {
       <div className="border-t border-emerald/20">
         <div className="container-custom py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-emerald/60 text-sm">
+            <p className="text-white/60 text-sm">
               © 2026 Ajiva Global General Trading LLC. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <button type="button" className="text-emerald/60 hover:text-emerald text-sm transition-colors">
+              <button type="button" className="text-white/60 hover:text-white text-sm transition-colors">
                 Privacy Policy
               </button>
-              <button type="button" className="text-emerald/60 hover:text-emerald text-sm transition-colors">
+              <button type="button" className="text-white/60 hover:text-white text-sm transition-colors">
                 Terms of Service
               </button>
             </div>

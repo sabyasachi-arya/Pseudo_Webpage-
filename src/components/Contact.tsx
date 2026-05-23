@@ -25,7 +25,7 @@ const InstagramIcon = () => (
        strokeLinecap="round" strokeLinejoin="round" width="36" height="36">
     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
     <circle cx="12" cy="12" r="4"/>
-    <circle cx="17.5" cy="6.5" r="0.8" fill="#F37324" stroke="none"/>
+    <circle cx="17.5" cy="6.5" r="1" />
   </svg>
 );
 
@@ -40,7 +40,7 @@ const YouTubeIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="#F37324" strokeWidth="1.6"
        strokeLinecap="round" strokeLinejoin="round" width="36" height="36">
     <path d="M22.54 6.42A2.78 2.78 0 0 0 20.6 4.47C18.88 4 12 4 12 4s-6.88 0-8.6.47A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.53C5.12 20 12 20 12 20s6.88 0 8.6-.47a2.78 2.78 0 0 0 1.94-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
-    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" stroke="#F37324" strokeWidth="1.6"/>
+    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
   </svg>
 );
 

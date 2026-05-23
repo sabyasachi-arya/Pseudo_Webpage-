@@ -96,7 +96,7 @@ const Navbar = () => {
               <a href="#contact" className="btn-primary hidden sm:inline-block">Get a Quote</a>
               <Link to="/login" aria-label="Login" className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-gray-300 bg-white hover:bg-gray-50 transition-colors text-secondary-700 font-semibold text-sm">
                 <UserCircleIcon className="w-5 h-5" />
-                <span className="hidden sm:inline">CRM Login</span>
+                <span className="hidden sm:inline"></span>
               </Link>
             </div>
           </div>

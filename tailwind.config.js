@@ -36,6 +36,7 @@ module.exports = {
         orange: '#F37324',
         teal: '#0B8282',
         darkteal: '#004B32',
+        white: '#FFFFFF'
       
       },
       animation: {

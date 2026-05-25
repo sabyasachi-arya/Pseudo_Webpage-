@@ -152,7 +152,7 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          <div className="mt-10 flex items-center gap-2 justify-center">
+          <div className="mt-10 flex items-center gap-2 justify-center flex-wrap px-4">
             {slides.map((_, idx) => (
               <button
                 key={idx}

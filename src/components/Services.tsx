@@ -52,10 +52,10 @@ const Services = () => {
   ];
 
   const cargoTypes = [
-    { icon: CpuChipIcon, name: "Electronics", color: "bg-blue-100 text-blue-600" },
-    { icon: CubeIcon, name: "SME Products", color: "bg-green-100 text-green-600" },
-    { icon: HomeIcon, name: "Household Products", color: "bg-purple-100 text-purple-600" }
-  ];
+  { icon: CpuChipIcon, name: "Electronics", color: "bg-emerald/10 text-emerald" },
+  { icon: CubeIcon, name: "SME Products", color: "bg-lime/20 text-emerald" },
+  { icon: HomeIcon, name: "Household Products", color: "bg-emerald/10 text-emerald" }
+];
 
   return (
     <section id="services" className="py-20 bg-gray-50">
@@ -100,7 +100,7 @@ const Services = () => {
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center text-secondary-700">
-                    <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
+                    <div className="w-2 h-2 bg-lime rounded-full mr-3"></div>
                     {feature}
                   </li>
                 ))}

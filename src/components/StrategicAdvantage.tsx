@@ -11,19 +11,19 @@ const StrategicAdvantage = () => {
       icon: ChartBarIcon,
       title: "Data-Driven Approach",
       description: "A strong customer database and operational insight help us plan routes, timelines and documentation with confidence.",
-      color: "bg-blue-100 text-blue-600"
+      color: "bg-orange-100 text-orange-600"
     },
     {
       icon: GlobeAltIcon,
       title: "Global Network",
       description: "Established relationships across major trade corridors to support consistent pickup, handling and delivery.",
-      color: "bg-green-100 text-green-600"
+      color: "bg-orange-100 text-orange-600"
     },
     {
       icon: UserGroupIcon,
       title: "Deep Market Penetration",
       description: "Focused market coverage in Asia and Africa to bridge global supply with local demand.",
-      color: "bg-purple-100 text-purple-600"
+      color: "bg-orange-100 text-orange-600"
     }
   ];
 

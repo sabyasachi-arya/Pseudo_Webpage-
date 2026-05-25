@@ -170,7 +170,7 @@ const StrategicAdvantage = () => {
                     <div className="space-y-2">
                       {country.specialties.map((specialty, idx) => (
                         <div key={idx} className="flex items-center text-secondary-700 text-sm">
-                          <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
+                          <div className="w-2 h-2 bg-orange rounded-full mr-3"></div>
                           {specialty}
                         </div>
                       ))}

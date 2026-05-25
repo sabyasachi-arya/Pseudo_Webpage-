@@ -67,7 +67,7 @@ const GCCNetwork = () => {
         >
           <div className="flex items-center justify-center mb-5">
             <div className="w-14 h-14 rounded-2xl bg-orange/10 border border-orange/20 flex items-center justify-center">
-  <TruckIcon className="w-7 h-7 text-emerald" />
+  <TruckIcon className="w-7 h-7 text-orange" />
 </div>
           </div>
           <h3 className="text-2xl md:text-3xl font-semibold text-center text-secondary-900 mb-3">

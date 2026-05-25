@@ -8,7 +8,7 @@ import {
   MapPinIcon
 } from '@heroicons/react/24/outline';
 
-const SHEET_URL = "https://script.google.com/macros/s/AKfycbw30qfBnOxFRGgoEwZ4XSQM__TkwOBcpKrq3LEGsTkP9kpKQ-Oh6WC6ww-Y8maC4SJL/exec";
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbxPrYZB6ipV2LiC0iZqldw6usF6S9OrYMcBGEITqerKNyr4-u7ycGo95oLIE3hLwxL-Dw/exec";
 
 const INSTAGRAM_URL = "https://www.instagram.com/ajiva_global_cargo/";
 const FACEBOOK_URL  = "https://www.facebook.com/profile.php?id=61590182633624";

@@ -80,11 +80,11 @@ const Services = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-300 p-8"
             >
-              <div className="w-32 h-32 rounded-xl overflow-hidden mb-6 border border-orange/20 bg-orange/10 flex items-center justify-center">
+              <div className="w-full h-48 rounded-xl overflow-hidden mb-6 bg-orange/5">
   <img
     src={service.image}
     alt={service.title}
-    className="w-28 h-28 object-contain"
+    className="w-full h-full object-contain p-4"
     loading="lazy"
   />
 </div>

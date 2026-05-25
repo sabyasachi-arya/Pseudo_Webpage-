@@ -28,12 +28,12 @@ const TrustedPartnerships = () => {
         </motion.div>
 
         {/* Logo marquee */}
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden -mx-4 sm:-mx-6 lg:-mx-8">
           <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10" />
           <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10" />
 
           <div
-            className="flex gap-16 motion-safe:animate-marquee"
+            className="flex gap-8 sm:gap-16 motion-safe:animate-marquee px-4"
             style={{
               width: 'max-content',
               willChange: 'transform',

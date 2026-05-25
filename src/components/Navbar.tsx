@@ -113,6 +113,7 @@ const Navbar = () => {
               <a href="#advantage" className="font-medium text-white/85 hover:text-white transition-colors text-sm">Strategic Advantage</a>
               <a href="#gcc" className="font-medium text-white/85 hover:text-white transition-colors text-sm">GCC Network</a>
               <a href="#contact" className="font-medium text-white/85 hover:text-white transition-colors text-sm">Contact</a>
+              <a href="#faq" className="font-medium text-white/85 hover:text-white transition-colors text-sm">FAQ</a>
             </div>
             <div className="flex items-center gap-3">
               <a href={URL_WA_DESKTOP} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className={CLS_SOCIAL_DESKTOP}><WhatsAppNavIcon /></a>
@@ -137,6 +138,7 @@ const Navbar = () => {
             <a href="#advantage" className="block py-2 text-secondary-700 hover:text-secondary-900 font-medium border-b border-gray-100">Strategic Advantage</a>
             <a href="#gcc" className="block py-2 text-secondary-700 hover:text-secondary-900 font-medium border-b border-gray-100">GCC Network</a>
             <a href="#contact" className="block py-2 text-secondary-700 hover:text-secondary-900 font-medium border-b border-gray-100">Contact</a>
+            <a href="#faq" className="block py-2 text-secondary-700 hover:text-secondary-900 font-medium border-b border-gray-100">FAQ</a>
             <div className="grid grid-cols-2 gap-3 mt-4">
               <a href="#contact" className="btn-primary w-full block text-center">Get a Quote</a>
               <Link to="/login" className="w-full inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white hover:bg-gray-50 transition-colors text-secondary-700 font-semibold text-sm py-2">

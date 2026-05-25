@@ -239,9 +239,9 @@ const Contact = () => {
                 return (
                   <div key={index} className="bg-gray-50 rounded-xl p-6 border border-gray-100">
                     <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
-                        <info.icon className="w-6 h-6 text-primary-600" />
-                      </div>
+                      <div className="w-12 h-12 bg-orange/10 rounded-lg flex items-center justify-center mr-4">
+  <info.icon className="w-6 h-6 text-orange" />
+</div>
                       <h4 className="font-semibold text-secondary-900">{info.title}</h4>
                     </div>
                     <p className="text-secondary-600 text-sm whitespace-pre-line">{info.details}</p>

@@ -63,7 +63,7 @@ const StrategicAdvantage = () => {
           backgroundAttachment: 'fixed',
         }}
       >
-        <div className="absolute inset-0 bg-secondary-900/85" />
+        <div className="absolute inset-0 bg-orange/85" />
         <div className="relative h-[70vh] min-h-[520px] flex items-center">
           <div className="container-custom">
             <div className="max-w-3xl">

@@ -95,7 +95,7 @@ const Testimonials = () => {
 
                 {/* Author */}
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-emerald flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-darkteal flex items-center justify-center flex-shrink-0">
                     <span className="text-white font-bold text-lg">
                       {testimonials[current].name.charAt(0)}
                     </span>
@@ -117,7 +117,7 @@ const Testimonials = () => {
           <div className="flex items-center justify-between mt-8">
             <button
               onClick={prev}
-              className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-emerald text-emerald hover:bg-emerald hover:text-white transition-all duration-200"
+              className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-darkteal text-darkteal hover:bg-darkteal hover:text-white transition-all duration-200"
             >
               <ChevronLeftIcon className="w-5 h-5" />
             </button>
@@ -133,8 +133,8 @@ const Testimonials = () => {
                   }}
                   className={`rounded-full transition-all duration-300 ${
                     idx === current
-                      ? 'w-8 h-3 bg-emerald'
-                      : 'w-3 h-3 bg-gray-300 hover:bg-emerald/50'
+                      ? 'w-8 h-3 bg-darkteal'
+                      : 'w-3 h-3 bg-gray-300 hover:bg-darkteal/50'
                   }`}
                 />
               ))}
@@ -142,7 +142,7 @@ const Testimonials = () => {
 
             <button
               onClick={next}
-              className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-emerald text-emerald hover:bg-emerald hover:text-white transition-all duration-200"
+              className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-darkteal text-darkteal hover:bg-darkteal hover:text-white transition-all duration-200"
             >
               <ChevronRightIcon className="w-5 h-5" />
             </button>

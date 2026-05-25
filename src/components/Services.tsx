@@ -52,9 +52,9 @@ const Services = () => {
   ];
 
   const cargoTypes = [
-  { icon: CpuChipIcon, name: "Electronics", color: "bg-emerald/10 text-emerald" },
-  { icon: CubeIcon, name: "SME Products", color: "bg-lime/20 text-emerald" },
-  { icon: HomeIcon, name: "Household Products", color: "bg-emerald/10 text-emerald" }
+  { icon: CpuChipIcon, name: "Electronics", color: "bg-emerald/10 text-orange" },
+  { icon: CubeIcon, name: "SME Products", color: "bg-lime/20 text-orange" },
+  { icon: HomeIcon, name: "Household Products", color: "bg-emerald/10 text-orange" }
 ];
 
   return (

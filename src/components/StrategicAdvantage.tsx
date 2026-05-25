@@ -7,25 +7,25 @@ const StrategicAdvantage = () => {
     'https://images.unsplash.com/photo-1446511437394-36cdff3ae1b3?auto=format&fit=crop&w=1200&q=80';
 
   const advantages = [
-    {
-      icon: ChartBarIcon,
-      title: "Data-Driven Approach",
-      description: "A strong customer database and operational insight help us plan routes, timelines and documentation with confidence.",
-      color: "bg-orange-100 text-orange-600"
-    },
-    {
-      icon: GlobeAltIcon,
-      title: "Global Network",
-      description: "Established relationships across major trade corridors to support consistent pickup, handling and delivery.",
-      color: "bg-orange-100 text-orange-600"
-    },
-    {
-      icon: UserGroupIcon,
-      title: "Deep Market Penetration",
-      description: "Focused market coverage in Asia and Africa to bridge global supply with local demand.",
-      color: "bg-orange-100 text-orange-600"
-    }
-  ];
+  {
+    icon: ChartBarIcon,
+    title: "Data-Driven Approach",
+    description: "...",
+    color: "orange/10 text-orange"
+  },
+  {
+    icon: GlobeAltIcon,
+    title: "Global Network",
+    description: "...",
+    color: "bg-orange/10 text-orange"
+  },
+  {
+    icon: UserGroupIcon,
+    title: "Deep Market Penetration",
+    description: "...",
+    color: "bg-orange/10 text-orange"
+  }
+];
 
   const countries = [
     {

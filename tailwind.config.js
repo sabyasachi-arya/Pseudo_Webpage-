@@ -5,6 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '375px',
+      },
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+      },
       colors: {
         primary: {
           50: '#eff6ff',
@@ -36,8 +42,7 @@ module.exports = {
         orange: '#F37324',
         teal: '#0B8282',
         darkteal: '#004B32',
-        white: '#FFFFFF'
-      
+        white: '#FFFFFF',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
@@ -62,4 +67,4 @@ module.exports = {
     },
   },
   plugins: [],
-}      
+}

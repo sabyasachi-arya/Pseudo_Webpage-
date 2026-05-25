@@ -25,6 +25,10 @@ const Hero = () => {
         src: 'company_image_2.png?auto=format&fit=crop&w=2400&q=80',
         alt: 'Custom Image 2',
       },
+      {
+        src: 'door-to-door.png?auto=format&fit=crop&w=2400&q=80',
+        alt: 'Custom Image 3',
+      },
     ],
     [],
   );

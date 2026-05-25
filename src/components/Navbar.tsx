@@ -112,6 +112,7 @@ const Navbar = () => {
               <a href="#services" className="font-medium text-white/85 hover:text-white transition-colors text-sm">Services</a>
               <a href="#advantage" className="font-medium text-white/85 hover:text-white transition-colors text-sm">Strategic Advantage</a>
               <a href="#gcc" className="font-medium text-white/85 hover:text-white transition-colors text-sm">GCC Network</a>
+              <a href="#testimonials" className="font-medium text-white/85 hover:text-white transition-colors text-sm">Testimonials</a>
               <a href="#contact" className="font-medium text-white/85 hover:text-white transition-colors text-sm">Contact</a>
               <a href="#faq" className="font-medium text-white/85 hover:text-white transition-colors text-sm">FAQ</a>
             </div>
@@ -137,6 +138,7 @@ const Navbar = () => {
             <a href="#services" className="block py-2 text-secondary-700 hover:text-secondary-900 font-medium border-b border-gray-100">Services</a>
             <a href="#advantage" className="block py-2 text-secondary-700 hover:text-secondary-900 font-medium border-b border-gray-100">Strategic Advantage</a>
             <a href="#gcc" className="block py-2 text-secondary-700 hover:text-secondary-900 font-medium border-b border-gray-100">GCC Network</a>
+            <a href="#testimonials" className="block py-2 text-secondary-700 hover:text-secondary-900 font-medium border-b border-gray-100">Testimonials</a>
             <a href="#contact" className="block py-2 text-secondary-700 hover:text-secondary-900 font-medium border-b border-gray-100">Contact</a>
             <a href="#faq" className="block py-2 text-secondary-700 hover:text-secondary-900 font-medium border-b border-gray-100">FAQ</a>
             <div className="grid grid-cols-2 gap-3 mt-4">

@@ -29,6 +29,26 @@ const Hero = () => {
         src: 'door-to-door.png?auto=format&fit=crop&w=2400&q=80',
         alt: 'Custom Image 3',
       },
+      {
+        src: 'land-transport.png?auto=format&fit=crop&w=2400&q=80',
+        alt: 'Custom Image 5',
+      },
+      {
+        src: 'doc-clearance.png?auto=format&fit=crop&w=2400&q=80',
+        alt: 'Custom Image 4',
+      },
+      {
+        src: 'custom-clearance.png?auto=format&fit=crop&w=2400&q=80',
+        alt: 'Custom Image 5',
+      },
+      {
+        src: 'air-freight.png?auto=format&fit=crop&w=2400&q=80',
+        alt: 'Custom Image 6',
+      },
+      {
+        src: 'cargo-freight.png?auto=format&fit=crop&w=2400&q=80',
+        alt: 'Custom Image 7',
+      },
     ],
     [],
   );

@@ -7,6 +7,7 @@ import GCCNetwork from '../components/GCCNetwork';
 import Contact from '../components/Contact';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
+import Testimonials from '../components/Testimonials';
 
 export default function MarketingHome() {
   return (
@@ -16,6 +17,7 @@ export default function MarketingHome() {
       <Services />
       <StrategicAdvantage />
       <GCCNetwork />
+      <Testimonials />
       <Contact />
       <FAQ />
       <Footer />

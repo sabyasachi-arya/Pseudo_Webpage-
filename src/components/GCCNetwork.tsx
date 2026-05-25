@@ -121,7 +121,7 @@ const GCCNetwork = () => {
                       </span>
                       <h3 className="text-lg font-semibold text-secondary-900">{country.name}</h3>
                     </div>
-                    <MapPinIcon className="w-5 h-5 text-secondary-500" />
+                    <MapPinIcon className="w-5 h-5 text-orange" />
                   </div>
 
                   <p className="text-secondary-600 mb-4 leading-relaxed">
@@ -132,7 +132,7 @@ const GCCNetwork = () => {
                     <h4 className="font-semibold text-secondary-900 mb-2">Major Cities</h4>
                     <div className="flex flex-wrap gap-2">
                       {country.cities.map((city, idx) => (
-                        <span key={idx} className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm">
+                        <span key={idx} className="bg-orange/10 text-orange px-3 py-1 rounded-full text-sm">
                           {city}
                         </span>
                       ))}
@@ -144,7 +144,7 @@ const GCCNetwork = () => {
                     <ul className="space-y-1">
                       {country.features.map((feature, idx) => (
                         <li key={idx} className="flex items-center text-secondary-700 text-sm">
-                          <div className="w-2 h-2 bg-primary-500 rounded-full mr-2"></div>
+                          <div className="w-2 h-2 bg-orange rounded-full mr-2"></div>
                           {feature}
                         </li>
                       ))}
@@ -169,23 +169,23 @@ const GCCNetwork = () => {
             </h3>
             <div className="grid md:grid-cols-3 gap-8 mt-8">
               <div>
-                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <TruckIcon className="w-8 h-8 text-primary-600" />
-                </div>
+                <div className="w-16 h-16 bg-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+  <TruckIcon className="w-8 h-8 text-orange" />
+</div>
                 <h4 className="font-semibold text-secondary-900 mb-2">Extensive Coverage</h4>
                 <p className="text-secondary-600">Complete GCC coverage with regular scheduled services</p>
               </div>
               <div>
-                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPinIcon className="w-8 h-8 text-primary-600" />
-                </div>
+                <div className="w-16 h-16 bg-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+  <TruckIcon className="w-8 h-8 text-orange" />
+</div>
                 <h4 className="font-semibold text-secondary-900 mb-2">Strategic Location</h4>
                 <p className="text-secondary-600">Dubai-based operations for optimal regional connectivity</p>
               </div>
               <div>
-                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <TruckIcon className="w-8 h-8 text-primary-600" />
-                </div>
+                <div className="w-16 h-16 bg-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+  <TruckIcon className="w-8 h-8 text-orange" />
+</div>
                 <h4 className="font-semibold text-secondary-900 mb-2">Professional Team</h4>
                 <p className="text-secondary-600">Experienced logistics professionals managing your cargo</p>
               </div>

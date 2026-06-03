@@ -1,56 +1,51 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  CpuChipIcon,
-  CubeIcon,
-  HomeIcon
-} from '@heroicons/react/24/outline';
 
 const Services = () => {
   const services = [
-  {
-    image: "/air-freight.png",
-    title: "Air Freight",
-    description: "Time-critical air cargo with clear cut-offs, tracking and documentation support.",
-    features: ["Express cargo worldwide", "Airport-to-airport", "Door delivery"]
-  },
-  {
-    image: "/cargo-freight.png",
-    title: "Sea Freight",
-    description: "Ocean freight planning for cost control and predictable transit across major trade lanes.",
-    features: ["FCL (Full Container Load)", "LCL (Shared container)", "Import & export"]
-  },
-  {
-    image: "/land-transport.png",
-    title: "Land Transport",
-    description: "UAE and GCC trucking with reliable schedules and cross-border coordination.",
-    features: ["UAE & GCC trucking", "Door pickup & delivery", "Cross-border transport"]
-  },
-  {
-    image: "/door-to-door.png",
-    title: "Door-to-Door Cargo",
-    description: "End-to-end movement from pickup to delivery for personal and commercial consignments.",
-    features: ["UAE to India/Pakistan/Bangladesh", "Personal & commercial cargo", "Full tracking"]
-  },
-  {
-    image: "/custom-clearance.png",
-    title: "Customs Clearance",
-    description: "Import/export documentation and Dubai customs handling to keep shipments compliant.",
-    features: ["Import/export documentation", "Dubai customs handling", "Regulatory compliance"]
-  },
-  {
-    image: "/doc-clearance.png",
-    title: "Documents Clearance",
-    description: "Trade documentation preparation and clearance support for faster processing.",
-    features: ["Trade documentation", "Legal clearance", "Fast processing"]
-  }
-];
+    {
+      image: "/air-freight.png",
+      title: "Air Freight",
+      description: "Time-critical air cargo with clear cut-offs, tracking and documentation support.",
+      features: ["Express cargo worldwide", "Airport-to-airport", "Door delivery"]
+    },
+    {
+      image: "/cargo-freight.png",
+      title: "Sea Freight",
+      description: "Ocean freight planning for cost control and predictable transit across major trade lanes.",
+      features: ["FCL (Full Container Load)", "LCL (Shared container)", "Import & export"]
+    },
+    {
+      image: "/land-transport.png",
+      title: "Land Transport",
+      description: "UAE and GCC trucking with reliable schedules and cross-border coordination.",
+      features: ["UAE & GCC trucking", "Door pickup & delivery", "Cross-border transport"]
+    },
+    {
+      image: "/door-to-door.png",
+      title: "Door-to-Door Cargo",
+      description: "End-to-end movement from pickup to delivery for personal and commercial consignments.",
+      features: ["UAE to India/Pakistan/Bangladesh", "Personal & commercial cargo", "Full tracking"]
+    },
+    {
+      image: "/custom-clearance.png",
+      title: "Customs Clearance",
+      description: "Import/export documentation and Dubai customs handling to keep shipments compliant.",
+      features: ["Import/export documentation", "Dubai customs handling", "Regulatory compliance"]
+    },
+    {
+      image: "/doc-clearance.png",
+      title: "Documents Clearance",
+      description: "Trade documentation preparation and clearance support for faster processing.",
+      features: ["Trade documentation", "Legal clearance", "Fast processing"]
+    }
+  ];
 
   const cargoTypes = [
-  { icon: CpuChipIcon, name: "Electronics", color: "bg-emerald/10 text-orange" },
-  { icon: CubeIcon, name: "SME Products", color: "bg-lime/20 text-orange" },
-  { icon: HomeIcon, name: "Household Products", color: "bg-emerald/10 text-orange" }
-];
+    { image: "/electronics-image.png", name: "Electronics" },
+    { image: "/sme-products.png", name: "SME Products" },
+    { image: "/household-image.png", name: "Household Products" }
+  ];
 
   return (
     <section id="services" className="py-20 bg-gray-50">
@@ -80,23 +75,23 @@ const Services = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-300 p-8"
             >
-              <div className="w-full h-96 rounded-xl overflow-hidden mb-6 bg-orange/5">
-  <img
-    src={service.image}
-    alt={service.title}
-    className="w-full h-full object-contain p-4"
-    loading="lazy"
-  />
-</div>
-              
+              <div className="w-full h-48 rounded-xl overflow-hidden mb-6 bg-orange/5">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-contain p-4"
+                  loading="lazy"
+                />
+              </div>
+
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">
                 {service.title}
               </h3>
-              
+
               <p className="text-secondary-600 mb-6 leading-relaxed">
                 {service.description}
               </p>
-              
+
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center text-secondary-700">
@@ -122,12 +117,17 @@ const Services = () => {
           <p className="text-secondary-600 text-center mb-8">
             Commercial and personal cargo handled with clear documentation and packaging guidance.
           </p>
-          
+
           <div className="grid md:grid-cols-3 gap-6">
             {cargoTypes.map((cargo, index) => (
               <div key={index} className="text-center">
-                <div className={`w-20 h-20 ${cargo.color} rounded-2xl flex items-center justify-center mx-auto mb-4 border border-white`}>
-                  <cargo.icon className="w-10 h-10" />
+                <div className="w-32 h-32 rounded-2xl overflow-hidden mx-auto mb-4 bg-orange/5 flex items-center justify-center">
+                  <img
+                    src={cargo.image}
+                    alt={cargo.name}
+                    className="w-28 h-28 object-contain"
+                    loading="lazy"
+                  />
                 </div>
                 <h4 className="font-semibold text-secondary-900">{cargo.name}</h4>
               </div>

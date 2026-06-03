@@ -109,7 +109,7 @@ const StrategicAdvantage = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="text-center rounded-2xl border border-gray-100 p-8 shadow-sm"
             >
-              <div className="w-full h-48 rounded-2xl overflow-hidden mx-auto mb-6 bg-orange/5 flex items-center justify-center">
+              <div className="w-full h-64 rounded-2xl overflow-hidden mx-auto mb-6 bg-orange/5 flex items-center justify-center">
                 <img
                   src={advantage.image}
                   alt={advantage.title}

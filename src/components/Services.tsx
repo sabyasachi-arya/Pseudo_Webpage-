@@ -121,11 +121,11 @@ const Services = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {cargoTypes.map((cargo, index) => (
               <div key={index} className="text-center">
-                <div className="w-32 h-32 rounded-2xl overflow-hidden mx-auto mb-4 bg-orange/5 flex items-center justify-center">
+                <div className="w-full h-64 rounded-2xl overflow-hidden mx-auto mb-4 bg-orange/5 flex items-center justify-center">
                   <img
                     src={cargo.image}
                     alt={cargo.name}
-                    className="w-28 h-28 object-contain"
+                    className="w-full h-full object-contain p-4"
                     loading="lazy"
                   />
                 </div>

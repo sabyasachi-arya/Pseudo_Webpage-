@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChartBarIcon, GlobeAltIcon, UserGroupIcon } from '@heroicons/react/24/outline';
 
 const StrategicAdvantage = () => {
   const imageFallback =
@@ -8,22 +7,19 @@ const StrategicAdvantage = () => {
 
   const advantages = [
     {
-      icon: ChartBarIcon,
+      image: "/data-driven.png",
       title: "Data-Driven Approach",
       description: "A strong customer database and operational insight help us plan routes, timelines and documentation with confidence.",
-      color: "bg-orange/10 text-orange"
     },
     {
-      icon: GlobeAltIcon,
+      image: "/global-outreach.png",
       title: "Global Network",
       description: "Established relationships across major trade corridors to support consistent pickup, handling and delivery.",
-      color: "bg-orange/10 text-orange"
     },
     {
-      icon: UserGroupIcon,
+      image: "/deep-market.png",
       title: "Deep Market Penetration",
       description: "Focused market coverage in Asia and Africa to bridge global supply with local demand.",
-      color: "bg-orange/10 text-orange"
     }
   ];
 
@@ -54,7 +50,6 @@ const StrategicAdvantage = () => {
   return (
     <section id="advantage" className="py-20 bg-white overflow-hidden">
 
-      {/* ✅ FIX 1: removed w-screen/-ml-[50vw] — use w-full instead */}
       <div
         className="relative w-full mb-16"
         style={{
@@ -114,8 +109,13 @@ const StrategicAdvantage = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="text-center rounded-2xl border border-gray-100 p-8 shadow-sm"
             >
-              <div className={`w-20 h-20 ${advantage.color} rounded-2xl flex items-center justify-center mx-auto mb-6`}>
-                <advantage.icon className="w-10 h-10" />
+              <div className="w-full h-48 rounded-2xl overflow-hidden mx-auto mb-6 bg-orange/5 flex items-center justify-center">
+                <img
+                  src={advantage.image}
+                  alt={advantage.title}
+                  className="w-full h-full object-contain p-4"
+                  loading="lazy"
+                />
               </div>
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">
                 {advantage.title}
@@ -132,12 +132,10 @@ const StrategicAdvantage = () => {
             Key Market Coverage
           </h3>
 
-          {/* ✅ FIX 2: replaced w-screen/-ml-[50vw] with overflow-hidden */}
           <div className="relative overflow-hidden -mx-4 sm:-mx-6 lg:-mx-8">
             <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-24 bg-gradient-to-r from-gray-50 to-transparent z-10" />
             <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-24 bg-gradient-to-l from-gray-50 to-transparent z-10" />
 
-            {/* ✅ FIX 3: GPU compositing for smooth animation */}
             <div
               className="flex gap-6 sm:gap-8 motion-safe:animate-marquee px-4 sm:px-10"
               style={{

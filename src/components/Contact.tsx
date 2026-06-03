@@ -12,7 +12,7 @@ const SHEET_URL = "https://script.google.com/macros/s/AKfycbxPrYZB6ipV2LiC0iZqld
 
 const INSTAGRAM_URL = "https://www.instagram.com/ajiva_global_cargo/";
 const FACEBOOK_URL  = "https://www.facebook.com/profile.php?id=61590182633624";
-const YOUTUBE_URL   = "https://www.youtube.com/@YOUR_CHANNEL";
+const YOUTUBE_URL   = "https://www.youtube.com/@AjivaGlobal";
 const LINKEDIN_URL  = "https://www.linkedin.com/in/ajiva-global-26652a40a/";
 const GMAPS_URL     = "https://maps.google.com/?q=YOUR_LOCATION";
 const WHATSAPP_NUMBER = "971544034567";
